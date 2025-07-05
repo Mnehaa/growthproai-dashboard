@@ -24,7 +24,7 @@ function App() {
 
   const regenerateHeadline = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/regenerate-headline?name=${name}&location=${location}`);
+      const res = await axios.get(`https://growthproai-backend-v57b.onrender.com/regenerate-headline?name=${name}&location=${location}`);
       setData(prev => ({ ...prev, headline: res.data.headline }));
     // eslint-disable-next-line no-unused-vars
     } catch (error) {
