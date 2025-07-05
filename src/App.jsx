@@ -14,7 +14,7 @@ function App() {
     }
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/business-data', { name, location });
+      const res = await axios.post('https://growthproai-backend-v57b.onrender.com/business-data', { name, location });
       setData(res.data);
     } catch (error) {
       alert("Failed to fetch data. Please check your backend.");
